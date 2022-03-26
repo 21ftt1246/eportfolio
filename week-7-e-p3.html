@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Week 7 ePortfolio part 1</title>
+	<style type="text/css">
+
+		h3{
+			text-align: center;
+		}
+
+		#one{
+			margin: 0px auto;
+			width: 600px;
+			flex-direction: column;
+			flex-wrap: wrap;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: none;
+		}
+
+		.column1{
+			width: 70%;
+			padding: 10px 0px;
+			box-sizing: border-box;
+			border: none;
+			text-align: center;
+		}
+
+		.column2{
+			width: 70%;
+			padding: 10px 0px;
+			box-sizing: border-box;
+			text-align: center;
+		}
+
+		.middle{
+			padding: 10px 0px;
+			box-sizing: border-box;
+			border: none;
+			text-align: center;
+			width: 100%
+		}
+
+	</style>
+</head>
+<body>
+<div id="one">
+	<div><h3>Registration for Covid-19 Volunteer -&#174;C19-Team</h3></div>
+	<form method="" action="">
+	<div class="column1">Fullname</div>
+	<div>
+		<input type="text" name="fullname" maxlength="30" class="column2">
+	</div>
+	<div class="column1">Email</div>
+	<div>
+		<input type="email" name="email" pattern=".{5,}(@gmail.com)" class="column2">
+	</div>
+	<div class="column1">Date you can start</div>
+	<div>
+		<input type="date" name="date" placeholder="mm/dd/yyyy" class="column2">
+	</div>
+	<div class="column1">Morning shift preference</div>
+	<div>
+		<input type="time" name="time" placeholder="--:-- --" class="column2">
+	</div>
+	<div class="column1">Evening shift perference</div>
+	<div>
+		<input type="time" name="time" placeholder="--:-- --" class="column2">
+	</div>
+	<div class="column1">How many hours you can work? In multiple of 3</div>
+	<div class="column2">
+		<select>
+			<option value="" selected></option>
+			<option value="3">3 hours</option>
+			<option value="6">6 hours</option>
+			<option value="9">9 houres</option>
+		</select>
+	</div>
+	<div class="column1">Distance you willing to commute to volunteer center?</div>
+	<div class="column2">
+		<label for=1>1</label>
+		<input type="range" name="" max="15" min="1" value="3">
+		<label for="15">15</label>
+	</div>
+	<div class="column1">You currency perference for payment?</div>
+	<div class="column2">
+		<input type="checkbox" name="currency" id="pound">
+			<label for="pound">&#163;</label>
+		<input type="checkbox" name="currency" id="yen">
+			<label for="yes">&#165;</label>
+		<input type="checkbox" name="currency" id="euro">
+			<label for="euro">&#8364;</label>
+	</div>
+	<div colspan="2" class="middle">
+		<textarea placeholder="Type you house address" rowspan="6" colspan="40"></textarea>
+	</div>
+	<div colspan="2" class="middle"><del>You will be given daily meals</del></div>
+	<div colspan="2" class="middle">
+		<input type="checkbox" name="checkbox">I agree to all terms and conditions
+	</div>
+	<div colspan="2" class="middle">
+		<input type="checkbox" name="checkbox">Prove you are not robot: 10&#60;20?
+	</div>
+	<div colspan="2" class="middle">
+		<input type="submit" name="submit" value="Volunteer now!">
+	</div>
+	<div colspan="2" class="middle">
+		<input type="reset" name="start over" value="Start now">
+	</div>
+	<div colspan="2" class="middle">For more informaton, visit MOH <a href="https://www.moh.gov.bn" target="_blank">website</a></div>
+	</div>
+	</form>
+</div>
+
+</body>
+</html>
